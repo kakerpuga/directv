@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Directv Argentina</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__inner">
+			<div class="header__logo logo">
+				<h1 class="logo__heading">
+					<img src="images/logo.svg" alt="DTV" title="DTV" class="logo__image" />
+				</h1>
+			</div>
+		</div>
+	</header>
+	<div class="steps-header">
+		<div class="steps-header__inner">
+			<h2 class="steps-header__title">Compra en línea aquí</h2>
+			<ul class="steps-header__list">
+				<li class="steps-header__item steps-header__item--state-active" data-step="1">
+					<span class="steps-header__number">
+						<span class="steps-header__circle">1</span>
+					</span>
+					<span class="steps-header__text">Eligí tu plan</span>
+				</li>
+				<li class="steps-header__item" data-step="2">
+					<span class="steps-header__number">
+						<span class="steps-header__circle">2</span>
+					</span>
+					<span class="steps-header__text">Ingresa tus datos</span>
+				</li>
+				<li class="steps-header__item " data-step="3">
+					<span class="steps-header__number">
+						<span class="steps-header__circle">3</span>
+					</span>
+					<span class="steps-header__text">Finalización de compra</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="steps">
+		<div class="steps__inner">
+			<div class="steps__item steps__item--step-1 steps__item--state-active">
+
+				<div class="plans">
+					<div class="plans-item plans-item--color-gold">
+
+						<div class="plans-item__header">
+							<h2 class="plans-item__title">
+							HD Only
+							<small>2 decodificadores</small>
+							</h2>
+							<p class="plans-item__channels">260 canales<br></p>
+							<div class="plans-item__button-wrapper">
+								<a href="#" onclick="buyPlan('gold')" class="plans-item__button-buy button">Comprar</a>
+							</div>
+						</div>
+
+						<div class="plans-item__description">
+							<div class="plans-item__description-header">
+								<div class="plans-item__price">
+									<span class="plans-item__price-symbol">$</span><span
+										class="plans-item__price-number">1.523 por mes</span><span
+										class="plans-item__price-lapse">Durante 9 meses - 50% de desc.</span>
+								</div>
+								<a onclick="showInfo($(this))" class="plans-item__more-info">Más Info</a>
+							</div>
+							<div class="plans-item__description-content">
+								<p><b>Compra online y recibí:</b></p>
+								<ul>
+									<li>Instalación gratis según método de pago</li>
+									<li>Meses con descuento</li>
+									<li>Posibilidad de agregar paquetes de programación</li>
+									<li>Este precio aplica para nuevos clientes</li>
+								</ul>
+								<small>Compras sujeta a suscripción por débito automático con tarjeta de crédito</small>
+							</div>
+						</div>
+
+						<div class="plans-item__information">
+							<div class="plans-item__include">
+								<h4 class="plans-item__include-title">Este plan incluye</h4>
+								<div class="plans-item__include-channels">
+									<p><b>Acceso a más de 260 canales:</b></p>
+									<!--<a href="#" class="button button--size-small">Lista de canales</a> -->
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Canales de música:</div>
+									<div class="plans-item__box-number">Con múltiples géneros</div>
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Canales HD</div>
+									<div class="plans-item__box-number">Deportes, entretenimiento y más</div>
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Canales de audio</div>
+									<div class="plans-item__box-number">El mejor sonido en tu tv</div>
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Directv go</div>
+									<div class="plans-item__box-number">App exclusiva de Directv</div>
+								</div>
+								<div class="plans-item__include-content">
+									<h4>Incluye: 2 DECODIFICADORES HD</h4>
+									<p>Cada decodificador tiene las siguientes funcionalidades:</p>
+									<ul>
+										<li>La mejor imagen con hasta 1080 líneas de resolución.</li>
+										<li>Búsqueda de programación por palabra clave, canal y más.</li>
+										<li>Control Parental por horario, edad y señal.</li>
+										<li>Cambio de idioma de audio y subtítulos.</li>
+										<li>Sonido Dolby Digital 5.1 para una experiencia envolvente.</li>
+										<li>Acceso a DIRECTV Cinema (portal de películas) y películas Pay Per View
+											(PPV).</li>
+										<li>Guía de programación interactiva.</li>
+										<li>Acceso a DIRECTVPlay.com (canales online).</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="plans-item plans-item--color-silver ">
+
+						<div class="plans-item__header">
+							<h2 class="plans-item__title">
+							HD Lite
+								<small>2 Decodificadores</small>
+							</h2>
+							<p class="plans-item__channels">160 canales<br></p>
+							<div class="plans-item__button-wrapper">
+								<a href="#" onclick="buyPlan('silver')" class="plans-item__button-buy button">Comprar</a>
+							</div>
+						</div>
+
+						<div class="plans-item__description">
+							<div class="plans-item__description-header">
+								<div class="plans-item__price">
+									<span class="plans-item__price-symbol">$</span><span
+										class="plans-item__price-number">1.840 por mes</span><span
+										class="plans-item__price-lapse"> Durante 4 meses</span>
+								</div>
+								<a onclick="showInfo($(this))" class="plans-item__more-info">Más Info</a>
+							</div>
+							<div class="plans-item__description-content">
+								<p><b>Compra online y recibe:</b></p>
+								<ul>
+									<li>Instalación gratis según método de pago</li>
+									<li>Meses con descuento</li>
+									<li>Posibilidad de agregar paquetes de programación</li>
+									<li>Este precio aplica para nuevos clientes </li>
+								</ul>
+								<small>Compras sujeta a suscripción por débito automático con tarjeta de crédito</small>
+							</div>
+						</div>
+
+						<div class="plans-item__information">
+							<div class="plans-item__include">
+								<h4 class="plans-item__include-title">Este plan incluye</h4>
+								<div class="plans-item__include-channels">
+									<p><b> Acceso a más 260 canales:</b></p>
+									<!--<a href="#" class="button button--size-small">Lista de canales</a>-->
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Canales de música:</div>
+									<div class="plans-item__box-number">Con múltiples géneros</div>
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Canales HD:</div>
+									<div class="plans-item__box-number">Deportes, entretenimiento y más</div>
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Canales de audio:</div>
+									<div class="plans-item__box-number">El mejor sonido en tu tv</div>
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Directv GO</div>
+									<div class="plans-item__box-number">App exclusiva de Directv</div>
+								</div>
+								<div class="plans-item__include-content">
+									<h4>2 DECODIFICADORES HD</h4>
+									<p>Cada decodificador tiene las siguientes funcionalidades:</p>
+									<ul>
+										<li>La mejor imagen con hasta 1080 líneas de resolución.</li>
+										<li>Búsqueda de programación por palabra clave, canal y más.</li>
+										<li>Control Parental por horario, edad y señal.</li>
+										<li>Cambio de idioma de audio y subtítulos.</li>
+										<li>Sonido Dolby Digital 5.1 para una experiencia envolvente.</li>
+										<li>Acceso a DIRECTV Cinema (portal de películas) y películas Pay Per View
+											(PPV).</li>
+										<li>Guía de programación interactiva.</li>
+										<li>Acceso a DIRECTVPlay.com (canales online).</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="plans-item plans-item--color-bronze ">
+
+						<div class="plans-item__header">
+							<h2 class="plans-item__title plans-item__title--size-medium">
+								HD Plus
+								<small>2 Decodificadores</small>
+							</h2>
+							<p class="plans-item__channels">260 canales<br></p>
+							<div class="plans-item__button-wrapper">
+								<a href="#" onclick="buyPlan('bronze')" class="plans-item__button-buy button">Comprar</a>
+							</div>
+						</div>
+
+						<div class="plans-item__description">
+							<div class="plans-item__description-header">
+								<div class="plans-item__price">
+									<span class="plans-item__price-symbol">$</span><span
+										class="plans-item__price-number">2.500 por mes</span><span
+										class="plans-item__price-lapse">Durante 6 meses</span>
+								</div>
+								<a onclick="showInfo($(this))" class="plans-item__more-info">Más Info</a>
+							</div>
+							<div class="plans-item__description-content">
+								<p><b>Compra online y recibí:</b></p>
+								<ul>
+									<li>Costo de instalación: $0</li>
+									<li>Meses con descuento</li>
+									<li>Posibilidad de agregar paquetes de programación</li>
+									<li>Este precio aplica para nuevos clientes</li>
+								</ul>
+								<small>Compras sujeta a suscripción por débito automático con tarjeta de crédito</small>
+							</div>
+						</div>
+
+						<div class="plans-item__information">
+							<div class="plans-item__include">
+								<h4 class="plans-item__include-title">Este plan incluye</h4>
+								<div class="plans-item__include-channels">
+									<p><b>Acceso a más de 260 canales:</b></p>
+									<!--<a href="#" class="button button--size-small">Lista de canales</a>-->
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Canales de música:</div>
+									<div class="plans-item__box-number">Con múltiples géneros</div>
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Canales HD:</div>
+									<div class="plans-item__box-number">Deportes, entretenimiento y más</div>
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Canales de audio:</div>
+									<div class="plans-item__box-number">El mejor sonido en tu tv</div>
+								</div>
+								<div class="plans-item__box">
+									<div class="plans-item__box-title">Acceso a Directv GO</div>
+									<div class="plans-item__box-number">App exclusiva de Directv</div>
+								</div>
+								<div class="plans-item__include-content">
+									<h4>2 DECODIFICADORES HD</h4>
+									<p>Cada decodificador tiene las siguientes funcionalidades:</p>
+									<ul>
+										<li>La mejor imagen con hasta 1080 líneas de resolución.</li>
+										<li>Búsqueda de programación por palabra clave, canal y más.</li>
+										<li>Control Parental por horario, edad y señal.</li>
+										<li>Opciones de grabado y pausas en vivo</li>
+										<li>Sonido Dolby Digital 5.1 para una experiencia envolvente.</li>
+										<li>Acceso a DIRECTV Cinema (portal de películas) y películas Pay Per View
+											(PPV).</li>
+										<li>Guía de programación interactiva.</li>
+										<li>Acceso a DIRECTVPlay.com (canales online).</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="steps__item steps__item--step-2">
+				<form id='form' class="form" action="javascript:submit();">
+					<div class="form__row form__row--size-full">
+						<button class="button back-button" >Atrás</button>
+					</div>
+					<div class="form__row">
+						<h3 class="form__title">Datos personales</h3>
+					</div>
+					<div class="form__row form__row--selected-plan">
+						<label class="form__selected-plan-text">Plan seleccionado:</label>
+						<select id="product-selector" class="select2 select2--size-small" data-placeholder="Seleccionar plan..." required>
+							<option></option>
+							<option disabled selected>Seleccione un plan</option>
+							<option value="gold">Plan HD Lite</option>
+							<option value="silver">Plan HD Only</option>
+							<option value="bronze">Plan HD Plus</option>
+						</select>
+					</div>
+					<div class="form__row">
+						<div class="input-wrapper">
+							<input class="input" type="text" name="first_name" id="first_name" placeholder=" " required>
+							<label class="label" for="first_name">Nombre</label>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="input-wrapper">
+							<input class="input" type="text" name="last_name" id="last_name" placeholder=" " required>
+							<label class="label" for="last_name">Apellido</label>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="input-wrapper">
+							<input class="input" type="tel" name="phone" id="phone" placeholder=" " required>
+							<label class="label" for="phone">Teléfono más el +15</label>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="input-wrapper">
+							<input class="input" type="email" name="email" id="email" placeholder=" " required>
+							<label class="label" for="email">Mail</label>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="input-wrapper">
+							<input class="input" type="date" name="birth_date" id="birth_date" placeholder=" " required>
+							<label class="label" for="birth_date">Fecha de Nacimiento</label>
+						</div>
+					</div>
+					<div class="form__row form__row--margin-extra">
+						<div class="input-wrapper">
+							<input class="input" type="text" name="dni" id="dni" placeholder=" " required>
+							<label class="label" for="dni">DNI</label>
+						</div>
+					</div>
+					<div class="form__row form__row--size-full">
+						<h3 class="form__title">Direccion de instalación</h3>
+					</div>
+					<div class="form__row">
+						<div class="input-wrapper">
+							<input class="input" type="text" name="address_street" id="address_street" placeholder=" " required>
+							<label class="label" for="address_street">Calle</label>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="input-wrapper">
+							<input class="input" type="text" name="address_number" id="address_number" placeholder=" " required>
+							<label class="label" for="address_number">Número</label>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="input-wrapper">
+							<input class="input" type="text" name="address_floor" id="address_floor" placeholder=" ">
+							<label class="label" for="address_floor">Piso</label>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="input-wrapper">
+							<input class="input" type="text" name="address_apartment" id="address_apartment" placeholder=" ">
+							<label class="label" for="address_apartment">Dpto</label>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="input-wrapper">
+							<input class="input" type="text" name="address_code" id="address_code" placeholder=" " required>
+							<label class="label" for="address_code">Código Postal</label>
+						</div>
+					</div>
+					<div class="form__row">
+						<div class="input-wrapper">
+							<input class="input" type="text" name="address_city" id="address_city" placeholder=" " required>
+							<label class="label" for="address_city">Ciudad</label>
+						</div>
+					</div>
+					<div class="form__row form__row--margin-extra">
+						<select id="province-selector" class="select2 select2--theme-material" data-placeholder="Provincia" required>
+							<option></option>
+							<option value="1">Buenos Aires</option>
+							<option value="2">Catamarca</option>
+							<option value="3">Chaco</option>
+							<option value="4">Chubut</option>
+							<option value="5">Córdoba</option>
+							<option value="6">Corrientes</option>
+							<option value="7">Entre Ríos</option>
+							<option value="8">Formosa</option>
+							<option value="9">Jujuy</option>
+							<option value="10">La Pampa</option>
+							<option value="11">La Rioja</option>
+							<option value="12">Mendoza</option>
+							<option value="13">Misiones</option>
+							<option value="14">Rio Negro</option>
+							<option value="15">Salta</option>
+							<option value="16">San Juan</option>
+							<option value="17">San Luis</option>
+							<option value="18">Santa Cruz</option>
+							<option value="19">Santa Fe</option>
+							<option value="20">Santiago de Estero</option>
+							<option value="21">Tierra del Fuego</option>
+							<option value="22">Tucumán</option>
+
+
+						</select>
+					</div>
+					<div class="form__row form__row--size-full">
+						<h3 class="form__title">Datos Pago</h3>
+					</div>
+					<div class="form__row">
+						<select class="select2 select2--theme-material" data-placeholder="Selección de Tarjeta" required>
+							<option></option>
+							<option value="1">Visa</option>
+							<option value="2">Mastercard</option>
+							<option value="3">Naranja</option>
+							<option value="4">American Express</option>
+							<option value="5">Cabal</option>
+							<option value="6">Otra</option>
+						</select>
+					</div>
+					<div class="form__row">
+						<select class="select2 select2--theme-material" data-placeholder="Banco" required>
+							<option></option>
+							<option value="1">Banco Nación</option>
+							<option value="2">Banco Hipotecario</option>
+							<option value="2">Banco Santander</option>
+							<option value="2">Banco Frances</option>
+							<option value="2">Banco Surpervilla</option>
+							<option value="2">Banco Patagonia</option>
+							<option value="2">Banco San Juan</option>
+							<option value="2">Banco Galicia</option>
+							<option value="2">Banco Macro</option>
+							<option value="2">Banco ICBC</option>
+							<option value="2">Banco HSBC</option>
+							<option value="2">Otro</option>
+						</select>
+					</div>
+					<div class="form__row form__row--size-full form__row--margin-extra">
+						<div class="input-wrapper">
+							<input class="input" type="text" name="card_name" id="card_name" placeholder=" " required>
+							<label class="label" for="card_name">Nombre del Titular</label>
+						</div>
+					</div>
+					<div class="form__row">
+						<button id="submit-button" class="button" type='submit'>Confirmar</button>
+					</div>
+					<div class="form__row">
+						<div id="error-message" class="message no-display"><img class="message__image" src="images/error.svg">Se produjo un error, intenta nuevamente luego</div>
+					</div>
+					<div class="form__row form__row--size-full">
+						<label class="label label-checkbox">
+							<input class="checkbox" type="checkbox" name="terms" placeholder=" ">
+							<a href="#">Acepto términos y condiciones</a>
+						</label>
+					</div>
+				</form>
+			</div>
+			<div class="steps__item steps__item--step-3 ">
+				<div class="thankyou">
+					<div class="thankyou__icon">
+						<img src="images/thankyou.svg" class="thankyou__image">
+						<div class="thankyou__title">Felicitaciones</div>
+					</div>
+					<div class="thankyou__plan">
+						<h3 class="thankyou__subtitle">Oferta seleccionada</h3>
+						<p id="plan-suscribed">Plan Oro : $123.900</p>
+						<br>
+						<p id="plan-specs">Instalación gratis + 2 decodificadores + 1 mes HBO + 1 mes FOX </p>
+					</div>
+					<div class="thankyou__data">
+						<div class="thankyou__data-table">
+							<div class="thankyou__data-row">
+								<div class="input-wrapper">
+									<input class="input" type="text" name="buy_first_name" id="first_name" placeholder=" "
+										value="" disabled="disabled">
+									<label class="label" for="first_name">Nombre</label>
+								</div>
+							</div>
+							<div class="thankyou__data-row">
+								<div class="input-wrapper">
+									<input class="input" type="text" name="buy_last_name" id="last_name" placeholder=" "
+										value="" disabled="disabled">
+									<label class="label" for="last_name">Apellido</label>
+								</div>
+							</div>
+							<div class="thankyou__data-row">
+								<div class="input-wrapper">
+									<input class="input" type="tel" name="buy_phone" id="phone" placeholder=" "
+										value="" disabled="disabled">
+									<label class="label" for="phone">Teléfono</label>
+								</div>
+							</div>
+							<div class="thankyou__data-row">
+								<div class="input-wrapper">
+									<input class="input" type="text" name="buy_dni" id="dni" placeholder=" "
+										value="" disabled="disabled">
+									<label class="label" for="dni">DNI</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="thankyou__text">Para completar la solicitud usted será contactado por un asesor que
+						confirmará su orden, realizará las validaciones pertinentes y registrará su método de pago
+						mensual.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="footer">
+		<div class="footer__inner">
+			<div class="footer__logo logo">
+				<h1 class="logo__heading">
+					<img src="images/logo.svg" alt="DTL" title="DTL" class="logo__image" />
+				</h1>
+			</div>
+			<div class="footer__text">
+				<div class="footer__nowrap">Contacto: <a class="footer__tel" href="tel:08003455419">0800-345-5419</a>
+				</div>
+				<div class="footer__separator">/</div>
+				<div class="footer__nowrap">Atención al Cliente: <a class="footer__tel" href="tel:08003334732">0800-333-4732</a></div>
+			</div>
+		</div>
+	</header>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+	<script type="text/javascript" src="javascripts/steps.js"></script>
+	<script type="text/javascript" src="javascripts/form.js"></script>
+
+	<script>
+
+	function submit(){
+		console.log("smt");
+	}
+		
+	</script>
+
+</body>
+
+</html>
